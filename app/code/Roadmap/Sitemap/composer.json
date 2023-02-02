@@ -1,0 +1,21 @@
+{
+  "name": "roadmap/module-sitemap",
+  "version": "1.0.0",
+  "description": "This extension shows the ability how to provide additional urls to the default sitemap generation",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-sitemap": "100.4.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Roadmap\\Sitemap\\": ""
+    }
+  }
+}
