@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2741653aa4df47dd42e2abf0bac9ffd4",
+    "content-hash": "de4abcc1f70b5ba3fb53edc93a13e254",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -23644,6 +23644,53 @@
                 "source": "https://github.com/magento/magento2-functional-testing-framework/tree/3.12.0"
             },
             "time": "2022-12-06T06:50:38+00:00"
+        },
+        {
+            "name": "mgtcommerce/module-mgtdevelopertoolbar",
+            "version": "1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mgtcommerce/Mgt_Developertoolbar.git",
+                "reference": "1b92b81718df59665f7576f46b0ca2d4ea646cee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mgtcommerce/Mgt_Developertoolbar/zipball/1b92b81718df59665f7576f46b0ca2d4ea646cee",
+                "reference": "1b92b81718df59665f7576f46b0ca2d4ea646cee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "type": "magento2-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/app/code/Mgt/DeveloperToolbar/registration.php"
+                ],
+                "psr-4": {
+                    "Mgt\\DeveloperToolbar\\": "src/app/code/Mgt/DeveloperToolbar"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Mgt Developer Toolbar",
+            "homepage": "https://www.mgt-commerce.com",
+            "keywords": [
+                "magento developer toolbar",
+                "mgt developer toolbar"
+            ],
+            "support": {
+                "issues": "https://github.com/mgtcommerce/Mgt_Developertoolbar/issues",
+                "source": "https://github.com/mgtcommerce/Mgt_Developertoolbar/tree/v1.0.10"
+            },
+            "time": "2023-01-06T15:07:51+00:00"
         },
         {
             "name": "mustache/mustache",
