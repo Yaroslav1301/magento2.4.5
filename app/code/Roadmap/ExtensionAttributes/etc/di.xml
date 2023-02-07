@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Roadmap\ExtensionAttributes\Api\ManagementInterface"
+                type="Roadmap\ExtensionAttributes\Model\Service\Management"/>
+    <preference for="Roadmap\ExtensionAttributes\Api\Data\AttributesInterface"
+                type="Roadmap\ExtensionAttributes\Model\Attributes"/>
+    <type name="Magento\Sales\Api\ShipmentRepositoryInterface">
+        <plugin name="add_additional_extension_attributes"
+                type="Roadmap\ExtensionAttributes\Plugin\ShipmentRepositoryPlugin" />
+    </type>
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="add_join_order_ext_attribute"
+                type="Roadmap\ExtensionAttributes\Plugin\OrderRepositoryAddExtensionAttributePlugin" />
+    </type>
+</config>

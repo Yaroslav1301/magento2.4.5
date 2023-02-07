@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Sales\Api\Data\ShipmentInterface">
+        <attribute code="carrier" type="string" />
+        <attribute code="delivery_date" type="string" />
+        <attribute code="cost" type="float" />
+    </extension_attributes>
+<!--    This case used just for getList method of Repository with a help
+of \Magento\Framework\Api\ExtensionAttribute\JoinProcessorInterface::process-->
+    <extension_attributes for="Magento\Sales\Api\Data\OrderInterface">
+        <attribute code="customer_dob" type="string">
+            <join reference_table="customer_entity" reference_field="entity_id" join_on_field="customer_id">
+                <field>dob</field>
+            </join>
+        </attribute>
+    </extension_attributes>
+</config>
