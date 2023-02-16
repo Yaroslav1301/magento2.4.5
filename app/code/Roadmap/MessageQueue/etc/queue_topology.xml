@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="magento-db" type="topic" connection="db">
+        <binding id="migrateCustomersBinding"
+                 topic="migrate.customers"
+                 destinationType="queue"
+                 destination="migrate.customers"/>
+    </exchange>
+    <exchange name="roadmap.product" type="topic" connection="amqp">
+        <binding id="roadmapProductDeleteBinding"
+                 topic="roadmap.product.delete"
+                 destinationType="queue"
+                 destination="roadmap_product_delete"/>
+    </exchange>
+</config>

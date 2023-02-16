@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Communication/etc/communication.xsd">
+    <topic name="migrate.customers" request="string">
+        <handler name="migrate.customers"
+                 type="Roadmap\MessageQueue\Model\Queue\Database\Customer\Consumer"
+                 method="process" />
+    </topic>
+    <topic name="roadmap.product.delete" request="Magento\Catalog\Api\Data\ProductInterface"/>
+</config>

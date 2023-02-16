@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="migrate.customers"
+              queue="migrate.customers"
+              connection="db"
+              maxMessages="500"
+              consumerInstance="Magento\Framework\MessageQueue\Consumer"
+              handler="Roadmap\MessageQueue\Model\Queue\Database\Customer\Consumer::process"/>
+    <consumer name="roadmapProductDelete"
+              queue="roadmap_product_delete"
+              connection="amqp"
+              handler="Roadmap\MessageQueue\Model\Queue\RabbitMQ\Product\Consumer::processMessage"/>
+</config>

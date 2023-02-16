@@ -1,0 +1,22 @@
+{
+  "name": "roadmap/module-message-queue",
+  "version": "1.0.0",
+  "description": "This extension shows how to use Message Queue in M2",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-amqp": "100.4.*",
+    "magento/module-asynchronous-operations": "100.4.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Roadmap\\MessageQueue\\": ""
+    }
+  }
+}
